@@ -26,4 +26,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+#File Types
 *.fig
+*.psd
+*.ai
