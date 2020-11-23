@@ -1,3 +1,177 @@
-body {
-  background-color: #f7fbfb;
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url(fonts/Oswald-Bold.woff) format("woff"),
+    url(fonts/Oswald-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald-Light";
+  src: url(fonts/Oswald-Light.woff) format("woff"),
+    url(fonts/Oswald-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url(fonts/Oswald-Medium.woff) format("woff"),
+    url(fonts/Oswald-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald-Light";
+  src: url(fonts/Oswald-Regular.woff) format("woff")
+    url(fonts/Oswald-Regular.woff2) format("woff2");
+}
+
+p {
+  font-family: "Oswald-Light", Arial, sans-serif;
+}
+
+main {
+  background: lightsteelblue;
+  padding-top: 1rem;
+}
+
+html {
+  font-size: 100%;
+}
+
+.nav_bar {
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  vertical-align: middle;
+  width: 15%;
+}
+
+.logo img {
+  height: auto;
+  width: 100%;
+}
+.nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.all_navigation::after {
+  background-color: aliceblue;
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+  width: 100%;
+}
+
+.all_navigation li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav_bar_links_ul li {
+  font-family: "Oswald-Medium", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav_bar_links_ul li,
+a {
+  text-decoration: none;
+}
+
+.nav_bar_links_ul .menulinks li {
+  margin-left: 0.5rem;
+}
+
+.menulinks {
+  margin-left: 2.25rem;
+}
+
+h2.first {
+  font-family: "Oswald-Bold", Arial, sans-serif;
+  margin: 0 0.2rem 0.5rem 0.2rem;
+  padding: 0 0.2rem;
+  text-align: center;
+  text-decoration: solid black underline;
+}
+
+h2.OM {
+  margin: 1rem 0.2rem 0.5rem 0.2rem;
+  padding: 0 0.2rem;
+  text-align: center;
+  text-decoration: solid black underline;
+}
+
+.bodytext {
+  font-size: 1rem;
+  font-weight: 250;
+  margin: 0rem 1rem 0 1rem;
+  padding: 0.5rem 0.25rem;
+}
+
+.CCG {
+  font-size: 4rem;
+  line-height: 3rem;
+  margin: 10rem 0.2rem 2rem 0.2rem;
+  padding: 0 0.2rem;
+}
+
+.swwd {
+  font-size: 1.5rem;
+  margin: 1rem 0.2rem 0.5rem 2.5rem;
+  padding: 1rem 0.2rem;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a.swwd:link,
+a.swwd:visited {
+  /* background-color: lightgrey; */
+  border: solid black 0.25rem;
+  box-shadow: 0.01rem 0.01rem 0.25rem grey;
+  color: black;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.faceimage {
+  height: auto;
+  width: 100%;
+}
+
+.mainimagecont {
+  background-color: white;
+  box-shadow: 0.01rem 0.01rem 0.25rem grey;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  padding: 0.25rem 0.25rem 0 0.25rem;
+  width: 90%;
+}
+
+.mainimagecont img {
+  width: 100%;
 }
