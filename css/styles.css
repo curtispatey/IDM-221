@@ -76,14 +76,9 @@ html {
   font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 2.5rem;
+  margin-top: 2.35rem;
   text-align: right;
   text-transform: uppercase;
-}
-
-.nav_bar_links_ul li,
-a {
-  text-decoration: none;
 }
 
 .nav_bar_links_ul .menulinks li {
@@ -105,7 +100,6 @@ h2.first {
   margin: 1rem 0.2rem 0.5rem 0.2rem;
   padding: 0 0.2rem;
   text-align: center;
-  text-decoration: underline;
 }
 
 h2.OM {
@@ -114,7 +108,6 @@ h2.OM {
   margin: 1rem 0.2rem 0.5rem 0.2rem;
   padding: 0 0.2rem;
   text-align: center;
-  text-decoration: solid black underline;
 }
 
 .bodytext {
@@ -125,7 +118,7 @@ h2.OM {
 }
 
 .CCG {
-  background: -webkit-linear-gradient(5deg, #ad0784, #ff9b65, #b10019);
+  background: -webkit-linear-gradient(15deg, #ad0784, #ff9b65, #b10019);
   font-family: "Oswald-Bold", Arial, sans-serif;
   font-size: 4rem;
   line-height: 3.5rem;
@@ -168,13 +161,14 @@ a:visited {
 
 a.sow:link,
 a.sow:visited {
+  border: solid #ad0784 0.15rem;
+  border-radius: 0.5rem;
   color: black;
+  display: inline-block;
   font-family: "Oswald-Light", Arial, sans-serif;
   font-weight: lighter;
   padding: 0.5rem 0.75rem;
   text-align: center;
-  text-decoration: underline;
-  display: inline-block;
 }
 
 .column1 {
@@ -284,7 +278,8 @@ a {
 }
 
 .portfolio_links_ul li {
-  border: solid black 0.15rem;
+  border: solid #ad0784 0.15rem;
+  border-radius: 0.5rem;
   box-shadow: 0.01rem 0.01rem 0.25rem grey;
   color: black;
   font-family: "Oswald-Medium", Arial, sans-serif;
@@ -297,5 +292,5 @@ a {
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  width: 90%;
+  width: 75%;
 }
