@@ -21,13 +21,15 @@
   src: url(fonts/Oswald-Regular.woff) format("woff")
     url(fonts/Oswald-Regular.woff2) format("woff2");
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
 p {
   font-family: "Oswald-Light", Arial, sans-serif;
 }
 
 main {
-  background: lightsteelblue;
   padding-top: 1rem;
 }
 
@@ -57,7 +59,6 @@ html {
 }
 
 .all_navigation::after {
-  background-color: aliceblue;
   content: "";
   display: table;
   clear: both;
@@ -71,16 +72,19 @@ html {
 }
 
 .nav_bar_links_ul li {
-  font-family: "Oswald-Medium", Arial, sans-serif;
+  font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 1.25rem;
-  font-weight: 500;
-  text-decoration: none;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .nav_bar_links_ul li,
 a {
   text-decoration: none;
+}
+
+a.contact {
+  padding-right: 1rem;
 }
 
 .nav_bar_links_ul .menulinks li {
@@ -92,14 +96,18 @@ a {
 }
 
 h2.first {
-  font-family: "Oswald-Bold", Arial, sans-serif;
-  margin: 0 0.2rem 0.5rem 0.2rem;
+  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 1rem 0.2rem 0.5rem 0.2rem;
   padding: 0 0.2rem;
   text-align: center;
-  text-decoration: solid black underline;
+  text-decoration: underline;
 }
 
 h2.OM {
+  font-family: "Oswald-Bold", Arial, sans-serif;
+  font-size: 1.15rem;
   margin: 1rem 0.2rem 0.5rem 0.2rem;
   padding: 0 0.2rem;
   text-align: center;
@@ -109,20 +117,41 @@ h2.OM {
 .bodytext {
   font-size: 1rem;
   font-weight: 250;
-  margin: 0rem 1rem 0 1rem;
+  margin: 0.25rem 0.5rem;
   padding: 0.5rem 0.25rem;
 }
 
 .CCG {
+  font-family: "Oswald-Bold", Arial, sans-serif;
   font-size: 4rem;
-  line-height: 3rem;
-  margin: 10rem 0.2rem 2rem 0.2rem;
+  line-height: 3.25rem;
+  margin: 6rem 0.2rem 3rem 0.2rem;
   padding: 0 0.2rem;
 }
 
-.swwd {
+.lnked {
+  display: inline-block;
+  height: auto;
+  max-width: 2rem;
+  vertical-align: middle;
+}
+
+.email {
+  display: inline-block;
+  height: auto;
+  max-width: 2rem;
+  vertical-align: middle;
+}
+
+.social {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.sow {
   font-size: 1.5rem;
-  margin: 1rem 0.2rem 0.5rem 2.5rem;
+  margin: 1rem 0.2rem 2rem 2.5rem;
   padding: 1rem 0.2rem;
 }
 
@@ -131,29 +160,34 @@ a:visited {
   color: black;
 }
 
-a.swwd:link,
-a.swwd:visited {
-  /* background-color: lightgrey; */
-  border: solid black 0.25rem;
-  box-shadow: 0.01rem 0.01rem 0.25rem grey;
+a.sow:link,
+a.sow:visited {
   color: black;
+  font-family: "Oswald-Light", Arial, sans-serif;
+  font-weight: lighter;
   padding: 0.5rem 0.75rem;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
 }
 
-.column {
+.column1 {
   float: left;
   width: 50%;
 }
+.column2 {
+  float: left;
+  width: 33%;
+}
 
-.row::after {
+.row {
   clear: both;
   content: "";
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  min-height: 1rem;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -163,15 +197,99 @@ a.swwd:visited {
 }
 
 .mainimagecont {
-  background-color: white;
   box-shadow: 0.01rem 0.01rem 0.25rem grey;
-  height: auto;
+  display: block;
   margin: auto;
   overflow: hidden;
-  padding: 0.25rem 0.25rem 0 0.25rem;
   width: 90%;
 }
 
+.mainimagecont_parnassus img {
+  box-shadow: 0.01rem 0.01rem 0.25rem grey;
+  display: block;
+  margin: 0.5rem auto;
+  max-height: 100%;
+  max-width: 95%;
+  overflow: hidden;
+}
+
 .mainimagecont img {
+  height: auto;
+  vertical-align: top;
   width: 100%;
+}
+
+.contact_ul {
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.contact_ul li {
+  align-items: center;
+  border: solid black 0.15rem;
+  box-shadow: 0.01rem 0.01rem 0.25rem grey;
+  color: black;
+  font-family: "Oswald-Medium", Arial, sans-serif;
+  font-size: 1rem;
+  list-style: none;
+  margin: 2rem 0rem;
+  padding: 0.5rem 0.75rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.home_description {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+
+.home_description_full::after {
+  clear: both;
+  content: "";
+  display: table;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.home_description_full li {
+  list-style: none;
+  display: inline-block;
+}
+
+.description_items {
+  padding: 0.5rem;
+}
+
+.description_items li {
+  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.description_items li,
+a {
+  text-decoration: none;
+}
+
+.portfolio_links_ul {
+  margin-top: 1rem;
+}
+
+.portfolio_links_ul li {
+  border: solid black 0.15rem;
+  box-shadow: 0.01rem 0.01rem 0.25rem grey;
+  color: black;
+  font-family: "Oswald-Medium", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  height: auto;
+  line-height: 3rem;
+  list-style: none;
+  margin: 2rem auto;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 90%;
 }
