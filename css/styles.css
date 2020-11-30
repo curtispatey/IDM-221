@@ -17,8 +17,8 @@
 }
 
 @font-face {
-  font-family: "Oswald-Light";
-  src: url(fonts/Oswald-Regular.woff) format("woff")
+  font-family: "Oswald-Regular";
+  src: url(fonts/Oswald-Regular.woff) format("woff"),
     url(fonts/Oswald-Regular.woff2) format("woff2");
 }
 * {
@@ -26,7 +26,7 @@
   margin: 0;
 }
 p {
-  font-family: "Oswald-Light", Arial, sans-serif;
+  font-family: "Oswald-Regular", Arial, sans-serif;
 }
 
 main {
@@ -42,20 +42,21 @@ html {
 }
 
 .logo {
-  display: inline-block;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
   vertical-align: middle;
-  width: 15%;
+  width: 25%;
 }
 
 .logo img {
   height: auto;
-  width: 100%;
+  width: 3.5rem;
 }
 .nav {
   display: inline-block;
+  text-align: right;
   vertical-align: middle;
-  width: 80%;
+  width: 100%;
 }
 
 .all_navigation::after {
@@ -67,14 +68,16 @@ html {
 }
 
 .all_navigation li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 
 .nav_bar_links_ul li {
   font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
+  margin-top: 2.5rem;
+  text-align: right;
   text-transform: uppercase;
 }
 
@@ -83,16 +86,16 @@ a {
   text-decoration: none;
 }
 
-a.contact {
-  padding-right: 1rem;
-}
-
 .nav_bar_links_ul .menulinks li {
   margin-left: 0.5rem;
 }
 
 .menulinks {
   margin-left: 2.25rem;
+}
+
+a.contact {
+  margin-right: 1.5rem;
 }
 
 h2.first {
@@ -116,17 +119,20 @@ h2.OM {
 
 .bodytext {
   font-size: 1rem;
-  font-weight: 250;
+  font-weight: 300;
   margin: 0.25rem 0.5rem;
   padding: 0.5rem 0.25rem;
 }
 
 .CCG {
+  background: -webkit-linear-gradient(5deg, #ad0784, #ff9b65, #b10019);
   font-family: "Oswald-Bold", Arial, sans-serif;
   font-size: 4rem;
-  line-height: 3.25rem;
+  line-height: 3.5rem;
   margin: 6rem 0.2rem 3rem 0.2rem;
   padding: 0 0.2rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .lnked {
@@ -151,7 +157,7 @@ h2.OM {
 
 .sow {
   font-size: 1.5rem;
-  margin: 1rem 0.2rem 2rem 2.5rem;
+  margin: 3rem 0.2rem 2rem 2.5rem;
   padding: 1rem 0.2rem;
 }
 
@@ -262,9 +268,9 @@ a.sow:visited {
 }
 
 .description_items li {
-  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-family: "Oswald-Light", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: lighter;
   text-transform: uppercase;
 }
 
