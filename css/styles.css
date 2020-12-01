@@ -1,25 +1,25 @@
 @font-face {
   font-family: "Oswald-Bold";
-  src: url(fonts/Oswald-Bold.woff) format("woff"),
-    url(fonts/Oswald-Bold.woff2) format("woff2");
+  src: url(../fonts/Oswald-Bold.woff) format("woff"),
+    url(../fonts/Oswald-Bold.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "Oswald-Light";
-  src: url(fonts/Oswald-Light.woff) format("woff"),
-    url(fonts/Oswald-Light.woff2) format("woff2");
+  src: url(../fonts/Oswald-Light.woff) format("woff"),
+    url(../fonts/Oswald-Light.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "Oswald-Medium";
-  src: url(fonts/Oswald-Medium.woff) format("woff"),
-    url(fonts/Oswald-Medium.woff2) format("woff2");
+  src: url(../fonts/Oswald-Medium.woff) format("woff"),
+    url(../fonts/Oswald-Medium.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "Oswald-Regular";
-  src: url(fonts/Oswald-Regular.woff) format("woff"),
-    url(fonts/Oswald-Regular.woff2) format("woff2");
+  src: url(../fonts/Oswald-Regular.woff) format("woff"),
+    url(../fonts/Oswald-Regular.woff2) format("woff2");
 }
 * {
   padding: 0;
@@ -45,7 +45,7 @@ html {
   padding: 0.5rem;
   position: absolute;
   vertical-align: middle;
-  width: 25%;
+  width: 100%;
 }
 
 .logo img {
@@ -76,7 +76,8 @@ html {
   font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
-  margin-top: 2.35rem;
+  margin-top: 2rem;
+  margin-right: 0.5rem;
   text-align: right;
   text-transform: uppercase;
 }
@@ -96,25 +97,17 @@ a.contact {
 h2.first {
   font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 1.5rem;
-  font-weight: normal;
-  margin: 1rem 0.2rem 0.5rem 0.2rem;
-  padding: 0 0.2rem;
-  text-align: center;
-}
-
-h2.OM {
-  font-family: "Oswald-Bold", Arial, sans-serif;
-  font-size: 1.15rem;
-  margin: 1rem 0.2rem 0.5rem 0.2rem;
-  padding: 0 0.2rem;
+  font-weight: bold;
+  margin: 1rem 0.2rem 0;
+  padding: 4rem 0.2rem 0rem;
   text-align: center;
 }
 
 .bodytext {
+  font-family: "Oswald-Light", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 300;
-  margin: 0.25rem 0.5rem;
-  padding: 0.5rem 0.25rem;
+  margin: auto;
+  padding: 0.5rem 1.5rem;
 }
 
 .CCG {
@@ -122,10 +115,47 @@ h2.OM {
   font-family: "Oswald-Bold", Arial, sans-serif;
   font-size: 4rem;
   line-height: 3.5rem;
-  margin: 6rem 0.2rem 3rem 0.2rem;
-  padding: 0 0.2rem;
+  margin: 6rem 0.5rem 2rem;
+  padding: 1rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.home_description {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+}
+
+.home_description_full::after {
+  clear: both;
+  content: "";
+  display: table;
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.home_description_full li {
+  list-style: none;
+  display: inline-block;
+}
+
+.description_items {
+  margin: 0 0.5rem;
+  padding: 1rem;
+}
+
+.description_items li {
+  font-family: "Oswald-Light", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.description_items li,
+a {
+  text-decoration: none;
 }
 
 .lnked {
@@ -150,8 +180,8 @@ h2.OM {
 
 .sow {
   font-size: 1.5rem;
-  margin: 3rem 0.2rem 2rem 2.5rem;
-  padding: 1rem 0.2rem;
+  margin: 3rem 1.5rem 3rem;
+  padding: 1rem 1rem;
 }
 
 a:link,
@@ -161,7 +191,7 @@ a:visited {
 
 a.sow:link,
 a.sow:visited {
-  border: solid #ad0784 0.15rem;
+  border: solid #ad0784 0.2rem;
   border-radius: 0.5rem;
   color: black;
   display: inline-block;
@@ -220,6 +250,7 @@ a.sow:visited {
 }
 
 .contact_ul {
+  margin-top: 5rem;
   padding: 1rem 4rem 1rem 4rem;
 }
 
@@ -237,54 +268,17 @@ a.sow:visited {
   text-decoration: none;
 }
 
-.home_description {
-  display: inline-block;
-  vertical-align: middle;
-  width: 90%;
-}
-
-.home_description_full::after {
-  clear: both;
-  content: "";
-  display: table;
-  width: 90%;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.home_description_full li {
-  list-style: none;
-  display: inline-block;
-}
-
-.description_items {
-  padding: 0.5rem;
-}
-
-.description_items li {
-  font-family: "Oswald-Light", Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-.description_items li,
-a {
-  text-decoration: none;
-}
-
 .portfolio_links_ul {
   margin-top: 1rem;
 }
 
 .portfolio_links_ul li {
-  border: solid #ad0784 0.15rem;
+  border: solid #ad0784 0.2rem;
   border-radius: 0.5rem;
-  box-shadow: 0.01rem 0.01rem 0.25rem grey;
   color: black;
   font-family: "Oswald-Medium", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   height: auto;
   line-height: 3rem;
   list-style: none;
