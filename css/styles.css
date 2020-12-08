@@ -206,7 +206,7 @@ a:visited {
 
 a.sow:link,
 a.sow:visited {
-  border: solid black 0.2rem;
+  border: solid black 0.15rem;
   border-radius: 0.5rem;
   color: black;
   display: inline-block;
@@ -273,7 +273,6 @@ a.sow:visited {
   align-items: center;
   border: solid black 0.15rem;
   border-radius: 0.5rem;
-  box-shadow: 0.01rem 0.01rem 0.25rem grey;
   color: black;
   font-family: "Oswald-Medium", Arial, sans-serif;
   font-size: 1rem;
@@ -289,7 +288,7 @@ a.sow:visited {
 }
 
 .portfolio_links_ul li {
-  border: solid black 0.2rem;
+  border: solid black 0.15rem;
   border-radius: 0.5rem;
   color: black;
   font-family: "Oswald-Medium", Arial, sans-serif;
